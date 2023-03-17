@@ -1,18 +1,96 @@
 :root{
-    --beige2 : #F1DEC9;
+    --beige : #F1DEC9;
+    --marron : #A4907C;
 }
-
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
-    background-color: var(--beige2);
+    background-color: var(--beige);
     margin: 0;
 }
 
-.navbar{
-    background-color: black;
-    display: flex;
-}
 h1{
     margin: 0;
+    text-transform: uppercase;
     color: white;
+    letter-spacing: 2px;
 }
+.nav-link{
+    color: white;
+    font-size: large;
+}
+.nav-link:hover{
+    color: var(--beige);
+}
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+        flex-direction: row-reverse;
+    }
+}
+.navbar{
+    height: 8vh;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler{
+    border: var(--bs-border-width) solid white;
+    color: whitesmoke;
+}
+
+
+.firstPart{
+    background-image: url("img/photosalon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 92vh;
+    width: 100%;
+}
+.itemsFirstPart{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.phoneNumber{
+    color: black;
+    background-color: var(--beige);
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    font-size: x-large;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 1);
+}
+.appointement{
+    color: black;
+    background-color: var(--marron);
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    font-size: x-large;
+    margin-left: 40px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 1);
+}
+.logo{
+    height: 180px;
+    width: 180px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1000px){
+    .firstPart{
+        height: 50vh;
+    }
+}
+
+
+.presentation{
+    margin-top: 60px;
+    letter-spacing: 1px;
+}
+
+h2{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
