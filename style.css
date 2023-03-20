@@ -1,6 +1,7 @@
 :root{
     --beige : #F1DEC9;
     --marron : #A4907C;
+    --marron2 : #8d7b68;
 }
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -92,5 +93,18 @@ h2{
     color: white;
     text-transform: uppercase;
     letter-spacing: 4px;
+    margin-top: 70px;
+}
+.prestationsAccueil{
+    position: relative;
+}
+.titleAndBgPrestationsAccueil{
+    background-color: var(--marron2);
+    width: 600px;
+    top: 600%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    position: absolute;
 }
 
