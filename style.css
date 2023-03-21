@@ -1,5 +1,6 @@
 :root{
     --beige : #F1DEC9;
+    --beige2 : #C8B6A6;
     --marron : #A4907C;
     --marron2 : #8d7b68;
 }
@@ -95,16 +96,120 @@ h2{
     letter-spacing: 4px;
     margin-top: 70px;
 }
-.prestationsAccueil{
-    position: relative;
-}
 .titleAndBgPrestationsAccueil{
     background-color: var(--marron2);
-    width: 600px;
-    top: 600%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 500px;
-    position: absolute;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.linksPrestations{
+    display: flex;
+    justify-content: center;
+}
+.prestationsFemmes{
+    display: flex;
+    background-color: var(--beige2);
+    padding: 20px;
+    margin-right: 50px;
+    flex-direction: column;
+}
+.prestationsHommes{
+    display: flex;
+    background-color: var(--beige2);
+    padding: 20px;
+    flex-direction: column;
 }
 
+.ctaPrestations{
+    margin: 30px;
+    font-size: large;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.partieDroiteProduitsAccueil{
+    margin-top: 20px;
+    background-color: var(--marron2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+}
+.nosproduits{
+    padding: 20px;
+    margin: 0;
+}
+.textNosProduits{
+    width: 450px;
+}
+.ctaNosProduits{
+    margin-bottom: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.leftPartFooter{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.separateurFooter{
+    border: white solid 2px;
+    opacity: 1;
+    width: 150px;
+    margin-left: 12px;
+}
+.mentionsLegales{
+    font-size: small;
+}
+.seConnecter{
+    font-size: xx-small;
+}
+
+.centerPartFooter{
+    color: white;
+}
+.jour{
+    display: flex;
+    justify-content: space-between;
+}
+.jour>p{
+    margin-right: 15px;
+}
+
+.rightPartFooter{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rightPartFooter>iframe{
+    margin-right: 50px;
+    margin-top: 15px;
+}
+h5{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.numeroFooter{
+    color: white;
+}
+.numeroFooter:hover{
+    color: #F1DEC9;
+}
