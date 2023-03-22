@@ -37,15 +37,6 @@ h1{
     color: whitesmoke;
 }
 
-
-.firstPart{
-    background-image: url("img/photosalon.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 92vh;
-    width: 100%;
-}
 .itemsFirstPart{
     height: 100%;
     display: flex;
@@ -164,10 +155,15 @@ h2{
     justify-content: space-between;
 }
 .leftPartFooter{
+    margin-top: 15px;
+    color: white;
     margin-left: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+.leftPartFooter>a{
+    text-decoration: underline;
 }
 .separateurFooter{
     border: white solid 2px;
@@ -183,6 +179,7 @@ h2{
 }
 
 .centerPartFooter{
+    margin-top: 15px;
     color: white;
 }
 .jour{
@@ -194,6 +191,7 @@ h2{
 }
 
 .rightPartFooter{
+    margin-top: 15px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -201,7 +199,7 @@ h2{
 }
 .rightPartFooter>iframe{
     margin-right: 50px;
-    margin-top: 15px;
+
 }
 h5{
     margin-top: 5px;
