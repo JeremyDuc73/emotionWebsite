@@ -31,12 +31,20 @@ h1{
 .navbar{
     height: 8vh;
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-color: rgba(0,0,0,0.5);
 }
 .navbar-toggler{
     border: var(--bs-border-width) solid white;
     color: whitesmoke;
 }
 
+.firstPart{
+    height: 100vh;
+    background-image: url("img/photoSalon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .itemsFirstPart{
     height: 100%;
     display: flex;
@@ -44,28 +52,9 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.phoneNumber{
-    color: black;
-    background-color: var(--beige);
-    text-decoration: none;
-    padding: 20px;
-    font-weight: bold;
-    font-size: x-large;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 1);
-}
-.appointement{
-    color: black;
-    background-color: var(--marron);
-    text-decoration: none;
-    padding: 20px;
-    font-weight: bold;
-    font-size: x-large;
-    margin-left: 40px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 1);
-}
 .logo{
-    height: 180px;
-    width: 180px;
+    height: 280px;
+    width: 280px;
     margin-bottom: 50px;
 }
 
@@ -76,16 +65,43 @@ h1{
 }
 
 
+.defilementNumero{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--marron);
+}
+.test3{
+    white-space: nowrap;
+    font-size: 5em;
+    animation: scrollTxtLeft 17s linear infinite;
+}
+@keyframes scrollTxtLeft {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
 .presentation{
-    margin-top: 60px;
+    padding-top: 60px;
     letter-spacing: 1px;
+    background-color: var(--beige);
+}
+.presentation>p{
+    margin-bottom: 0;
 }
 
 h2{
     color: white;
     text-transform: uppercase;
     letter-spacing: 4px;
-    margin-top: 70px;
+}
+.prestationsAccueil{
+    padding-top: 70px;
+    background-color: var(--beige);
 }
 .titleAndBgPrestationsAccueil{
     background-color: var(--marron2);
@@ -118,6 +134,10 @@ h2{
     text-transform: capitalize;
 }
 
+
+.produitsAccueil{
+    background-color: var(--beige);
+}
 .partieDroiteProduitsAccueil{
     margin-top: 20px;
     background-color: var(--marron2);
@@ -141,7 +161,9 @@ h2{
 }
 
 
-
+.partieBgDifferent{
+    background-color: var(--beige);
+}
 
 
 
@@ -151,11 +173,16 @@ h2{
 
 .footer{
     background-color: black;
+    position: relative;
+    z-index: 50;
+}
+.footerContainer{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 .leftPartFooter{
-    margin-top: 15px;
+    padding-top: 15px;
     color: white;
     margin-left: 50px;
     display: flex;
@@ -179,7 +206,7 @@ h2{
 }
 
 .centerPartFooter{
-    margin-top: 15px;
+    padding-top: 15px;
     color: white;
 }
 .jour{
@@ -191,7 +218,7 @@ h2{
 }
 
 .rightPartFooter{
-    margin-top: 15px;
+    padding-top: 15px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -210,4 +237,53 @@ h5{
 }
 .numeroFooter:hover{
     color: #F1DEC9;
+}
+
+
+
+
+
+.scrollTop{
+    position: fixed;
+    right: 15px;
+    bottom: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    width : 50px;
+    height: 50px;
+}
+.btnScroll{
+    color: black;
+
+}
+
+.imgRDV1 {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    animation: example 12s linear 0s infinite;
+}
+@keyframes example {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.imgRDV2{
+    position: fixed;
+    width: 100px;
+    right: 50px;
+    bottom: 50px;
+    height: 100px;
+}
+.fb{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+.fb>a{
+    color: black;
+}
+.fb>a:hover{
+    color: white;
 }
