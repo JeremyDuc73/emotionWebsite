@@ -1,27 +1,25 @@
 :root{
-    --beige : #F1DEC9;
-    --beige2 : #C8B6A6;
-    --marron : #A4907C;
-    --marron2 : #8d7b68;
+    --mastic : #C8B6A6;
+    --marron : #8c5d42;
 }
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
-    background-color: var(--beige);
     margin: 0;
 }
 
-h1{
-    margin: 0;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 2px;
+
+.logoNavbar{
+    width: 100px;
+    height: 100px;
 }
 .nav-link{
     color: white;
+    margin-right: 20px;
+    text-transform: capitalize;
     font-size: large;
 }
 .nav-link:hover{
-    color: var(--beige);
+    color: var(--marron);
 }
 @media (min-width: 992px){
     .navbar-expand-lg .navbar-collapse {
@@ -29,21 +27,23 @@ h1{
     }
 }
 .navbar{
-    height: 8vh;
+    height: 12vh;
+    background-color: #262626;
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    background-color: rgba(0,0,0,0.5);
 }
 .navbar-toggler{
     border: var(--bs-border-width) solid white;
     color: whitesmoke;
 }
 
+
 .firstPart{
-    height: 100vh;
-    background-image: url("img/photoSalon.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("img/photosalon.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 88vh;
+    width: 100%;
 }
 .itemsFirstPart{
     height: 100%;
@@ -52,12 +52,42 @@ h1{
     justify-content: center;
     align-items: center;
 }
+h1{
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.phoneNumber{
+    color: var(--marron);
+    background-color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    font-size: x-large;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 1);
+}
+.phoneNumber:hover{
+    color: white;
+    background-color: black;
+}
+.appointement{
+    color: white;
+    background-color: var(--marron);
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    font-size: x-large;
+    margin-left: 40px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 1);
+}
+.appointement:hover{
+    color: white;
+    background-color: black;
+}
 .logo{
-    height: 280px;
-    width: 280px;
+    height: 180px;
+    width: 180px;
     margin-bottom: 50px;
 }
-
 @media (max-width: 1000px){
     .firstPart{
         height: 50vh;
@@ -65,146 +95,79 @@ h1{
 }
 
 
-.defilementNumero{
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    background-color: var(--marron);
-}
-.test3{
-    white-space: nowrap;
-    font-size: 5em;
-    animation: scrollTxtLeft 17s linear infinite;
-}
-@keyframes scrollTxtLeft {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(-100%, 0);
-    }
-}
+
+
 
 .presentation{
-    height: 200px;
-    padding-top: 100px;
+    background-color: black;
+    padding-top: 60px;
+    color: whitesmoke;
     letter-spacing: 1px;
-    background-color: var(--beige);
-    font-size: xx-large;
+    padding-bottom: 50px;
 }
-
-
 h2{
+    color: black;
+    text-transform: uppercase;
     letter-spacing: 4px;
-    text-decoration: underline;
+    margin-top: 70px;
 }
-.prestationsAccueil{
-    padding-top: 100px;
-    padding-bottom: 150px;
-    background-color: var(--beige);
+.titleAndBgPrestationsAccueil{
+    background-color: var(--marron2);
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.linksPrestations{
+    display: flex;
+    justify-content: center;
 }
 .prestationsFemmes{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: var(--beige2);
+    padding: 20px;
+    margin-right: 50px;
+    flex-direction: column;
 }
-.prestationsFemmes>img{
-    width: 50%;
-    height: 50%;
-}
-.textePrestationsFemmes{
-    display: flex;
-    align-items: center;
-    transition: transform .4s;
-}
-.textePrestationsFemmes:hover{
-    transform: scale(1.1);
-}
-.textePrestationsFemmes>a{
-    color: black;
-}
-.textePrestationsFemmes>a>h2{
-    margin-left: 20px;
-}
-
 .prestationsHommes{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.prestationsHommes>img{
-    width: 50%;
-    height: 50%;
-}
-.textePrestationsHommes{
-    display: flex;
-    align-items: center;
-    transition: transform .4s;
-}
-.textePrestationsHommes:hover{
-    transform: scale(1.1);
-}
-.textePrestationsHommes>a{
-    color: black;
-}
-.textePrestationsHommes>a>h2{
-    margin-right: 20px;
-}
-
-
-
-.produitsAccueil{
-    background-color: var(--beige);
-}
-
-
-
-
-.partieBgDifferent{
     background-color: var(--beige2);
+    padding: 20px;
+    flex-direction: column;
 }
-.membre{
-    justify-content: center;
-    align-items: center;
+.ctaPrestations{
+    margin: 30px;
+    font-size: large;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.partieDroiteProduitsAccueil{
+    margin-top: 20px;
+    background-color: var(--marron2);
     display: flex;
-    padding-bottom: 200px;
-    margin-top: 100px;
-    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
 }
-.photoMembre{
-    border-radius: 64% 36% 70% 30% / 48% 45% 55% 52% ;
-    width: 400px;
-    height: 400px;
-    margin-right: 50px;
-    background-image: url("img/membre.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.nosproduits{
+    padding: 20px;
+    margin: 0;
 }
-.identite{
-    font-size: xx-large;
+.textNosProduits{
+    width: 450px;
 }
-.parcours{
-    width: 400px;
+.ctaNosProduits{
+    margin-bottom: 20px;
+    font-size: large;
+    font-weight: bold;
 }
-
-
-
-
-
-
 .footer{
     background-color: black;
-    position: relative;
-    z-index: 50;
-}
-.footerContainer{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
 }
 .leftPartFooter{
-    padding-top: 15px;
+    margin-top: 15px;
     color: white;
     margin-left: 50px;
     display: flex;
@@ -228,7 +191,7 @@ h2{
 }
 
 .centerPartFooter{
-    padding-top: 15px;
+    margin-top: 15px;
     color: white;
 }
 .jour{
@@ -240,7 +203,7 @@ h2{
 }
 
 .rightPartFooter{
-    padding-top: 15px;
+    margin-top: 15px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -248,6 +211,7 @@ h2{
 }
 .rightPartFooter>iframe{
     margin-right: 50px;
+    margin-top: 15px;
 
 }
 h5{
@@ -264,35 +228,3 @@ h5{
 
 
 
-
-
-.imgRDV1 {
-    width: 200px;
-    height: 200px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    animation: example 12s linear 0s infinite;
-}
-@keyframes example {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-.imgRDV2{
-    position: fixed;
-    width: 100px;
-    right: 50px;
-    bottom: 50px;
-    height: 100px;
-}
-.fb{
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-}
-.fb>a{
-    color: black;
-}
-.fb>a:hover{
-    color: white;
-}
