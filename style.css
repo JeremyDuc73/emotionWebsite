@@ -1,10 +1,72 @@
 :root{
     --mastic : #C8B6A6;
     --marron : #8c5d42;
+    --lightblack : #262626
 }
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0;
+}
+h1{
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+}
+
+
+
+
+
+.bandeInfosTop{
+    background-color: var(--mastic);
+}
+.containerBandeInfos{
+    display: flex;
+    justify-content: space-between;
+}
+.adresseBandeInfos{
+    display: flex;
+    align-items: center;
+}
+.adresseBandeInfos>a{
+    text-decoration: none;
+    color: black;
+    margin-left: 6px;
+}
+.adresseBandeInfos>a:hover{
+    color: whitesmoke;
+}
+.horairesBandeInfos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.horairesBandeInfos>p{
+    margin-bottom: 0;
+}
+.numeroBandeInfos{
+    display: flex;
+    align-items: center;
+}
+.numeroBandeInfos>a{
+    text-decoration: none;
+    padding: 8px;
+    color : black;
+}
+.numeroBandeInfos>a:hover{
+    color: whitesmoke;
+}
+.hrBandeInfos{
+    width: 3px;
+    height: 40px;
+    opacity: 1;
+    background-color: black;
 }
 
 
@@ -16,7 +78,7 @@ body{
     color: white;
     margin-right: 20px;
     text-transform: capitalize;
-    font-size: large;
+    font-size: 1.4em;
 }
 .nav-link:hover{
     color: var(--marron);
@@ -28,7 +90,7 @@ body{
 }
 .navbar{
     height: 12vh;
-    background-color: #262626;
+    background-color: var(--lightblack);
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-toggler{
@@ -38,7 +100,7 @@ body{
 
 
 .firstPart{
-    background-image: url("img/photosalon.jpg");
+    background-image: url("img/photoSalon.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -52,17 +114,13 @@ body{
     justify-content: center;
     align-items: center;
 }
-h1{
-    font-weight: bold;
-    letter-spacing: 4px;
-}
 .phoneNumber{
     color: var(--marron);
     background-color: white;
     text-decoration: none;
     padding: 20px;
     font-weight: bold;
-    font-size: x-large;
+    font-size: 1.5em;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 1);
 }
 .phoneNumber:hover{
@@ -75,7 +133,7 @@ h1{
     text-decoration: none;
     padding: 20px;
     font-weight: bold;
-    font-size: x-large;
+    font-size: 1.5em;
     margin-left: 40px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 1);
 }
@@ -105,17 +163,21 @@ h1{
     letter-spacing: 1px;
     padding-bottom: 50px;
 }
-h2{
-    color: black;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-top: 70px;
+
+
+
+
+.prestationsAccueil{
+    background-color: var(--lightblack);
 }
 .titleAndBgPrestationsAccueil{
-    background-color: var(--marron2);
     width: 500px;
     margin-left: auto;
     margin-right: auto;
+}
+.titleAndBgPrestationsAccueil>h2{
+    color: whitesmoke;
+    padding-top: 70px;
 }
 .linksPrestations{
     display: flex;
@@ -123,59 +185,122 @@ h2{
 }
 .prestationsFemmes{
     display: flex;
-    background-color: var(--beige2);
     padding: 20px;
     margin-right: 50px;
     flex-direction: column;
 }
 .prestationsHommes{
     display: flex;
-    background-color: var(--beige2);
     padding: 20px;
     flex-direction: column;
 }
 .ctaPrestations{
     margin: 30px;
-    font-size: large;
+    height: 70px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
     text-transform: capitalize;
 }
+.ctaPrestations:hover{
+    background-color: var(--marron );
+    color: whitesmoke;
+}
+
+
+
+
+
+.produitsAccueil{
+    background-color: var(--mastic);
+}
+.containerProduitsAccueil{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .partieDroiteProduitsAccueil{
-    margin-top: 20px;
-    background-color: var(--marron2);
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    width: 600px;
 }
-.nosproduits{
-    padding: 20px;
-    margin: 0;
+.partieDroiteProduitsAccueil>h2{
+    color: black;
+    margin-bottom: 0;
 }
-.textNosProduits{
+.partieDroiteProduitsAccueil>p{
+    color: black;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    margin-bottom: 0;
     width: 450px;
 }
 .ctaNosProduits{
-    margin-bottom: 20px;
-    font-size: large;
+    padding: 25px;
     font-weight: bold;
+    font-size: 1.5em;
+    text-transform: capitalize;
 }
-.footer{
+.ctaNosProduits:hover{
+    background-color: var(--marron);
+    color: whitesmoke;
+}
+
+.notreEquipe{
     background-color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.titleAndBgNotreEquipe>h2{
+    color: whitesmoke;
+    margin-bottom: 40px;
+}
+.membre{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.photo{
+    border-radius: 50%  ;
+    background-image: url("img/membre.jpg");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.texteMembre{
+    color: whitesmoke;
+}
+
+
+
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--lightblack);
+}
+.containerFooter{
     display: flex;
     justify-content: space-between;
 }
 .leftPartFooter{
-    margin-top: 15px;
     color: white;
-    margin-left: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 .leftPartFooter>a{
     text-decoration: underline;
+    color:whitesmoke;
+}
+.leftPartFooter>a:hover{
+    color: var(--marron);
 }
 .separateurFooter{
     border: white solid 2px;
@@ -190,8 +315,8 @@ h2{
     font-size: xx-small;
 }
 
+
 .centerPartFooter{
-    margin-top: 15px;
     color: white;
 }
 .jour{
@@ -199,21 +324,22 @@ h2{
     justify-content: space-between;
 }
 .jour>p{
-    margin-right: 15px;
+    margin-left: 20px;
 }
 
 .rightPartFooter{
-    margin-top: 15px;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.rightPartFooter>iframe{
-    margin-right: 50px;
-    margin-top: 15px;
-
+.linkFacebook{
+    color: whitesmoke;
 }
+.linkFacebook:hover{
+    color: var(--marron);
+}
+
 h5{
     margin-top: 5px;
     margin-bottom: 5px;
@@ -222,7 +348,7 @@ h5{
     color: white;
 }
 .numeroFooter:hover{
-    color: #F1DEC9;
+    color: var(--marron);
 }
 
 
