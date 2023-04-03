@@ -4,12 +4,13 @@
     --lightblack : #262626
 }
 body{
+    background-color: var(--mastic);
     font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0;
 }
 h1{
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 30px;
     letter-spacing: 4px;
 }
@@ -21,7 +22,7 @@ h2{
 
 @media (max-width: 500px){
     h1{
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
     h2{
         font-size: 1.5em;
@@ -210,6 +211,74 @@ h2{
 
 
 
+
+.textForm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.textForm>p{
+    width: 500px;
+}
+.linkFacebookForm{
+    color: black;
+}
+.linkFacebookForm:hover{
+    color: var(--marron);
+}
+.formContact{
+    padding: 10px;
+    border: 2px solid black;
+    width: 500px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.contactFormAndText{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nomEtMail{
+    display: flex;
+}
+.email{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.message{
+    height: 180px;
+}
+.submitForm{
+    margin-top: 40px;
+}
+iframe{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 450px){
+    .contactFormAndText{
+        flex-direction: column;
+    }
+    .formContact{
+        margin-top: 30px;
+        width: 350px;
+    }
+    .textForm>p{
+        width: 350px;
+    }
+    iframe{
+        width: 350px;
+        height: 200px;
+    }
+}
 
 .footer{
     padding-top: 20px;
